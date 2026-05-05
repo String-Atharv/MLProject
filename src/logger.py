@@ -13,6 +13,4 @@ logging.basicConfig(
     level=logging.INFO
 )
 
-if __name__ == "__main__":
-    logging.info("Logging test started")
-    logging.error("Something went wrong")
+logger = logging.getLogger(__name__)
