@@ -3,4 +3,8 @@ numpy
 seaborn
 matplotlib
 scikit-learn
--e . ## this sync with setup.py, which is used for packaging the project. It allows you to install the package in editable mode, meaning that any changes you make to the code will be reflected immediately without needing to reinstall the package.
+ipykernel
+catboost
+xgboost
+lightgbm    
+#-e . ## this sync with setup.py, which is used for packaging the project. It allows you to install the package in editable mode, meaning that any changes you make to the code will be reflected immediately without needing to reinstall the package.
