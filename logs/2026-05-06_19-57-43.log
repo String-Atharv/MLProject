@@ -1,0 +1,6 @@
+[2026-05-06 19:57:45,073] 23 src.logger - INFO - Data Ingestion method starts
+[2026-05-06 19:57:45,075] 26 src.logger - INFO - Dataset read as pandas dataframe
+[2026-05-06 19:57:45,077] 32 src.logger - INFO - Train test split initiated
+[2026-05-06 19:57:45,094] 38 src.logger - INFO - Ingestion of the data is completed
+[2026-05-06 19:57:45,097] 45 src.logger - INFO - Read train and test data completed
+[2026-05-06 19:57:45,097] 47 src.logger - INFO - Obtaining preprocessing object
