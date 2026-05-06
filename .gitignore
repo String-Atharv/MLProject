@@ -1,0 +1,13 @@
+.env
+.venv
+env/
+mlenv/
+__pycache__/
+*.pyc
+*.egg-info/
+ml_project.egg-info/
+logs/
+artifacts/*.csv
+notebook/
+.ebextensions/*.bak
+stat

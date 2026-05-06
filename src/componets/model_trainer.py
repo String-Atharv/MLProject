@@ -43,7 +43,78 @@ class ModelTrainer:
                 "XGB Regressor":XGBRegressor(),
             }
 
-            model_report:dict =evaluate_models(x_train,y_train,x_test,y_test,models)
+            param = {
+
+            "Ridge Regression": {
+                'alpha': [0.1, 1.0, 10.0],
+                'solver': ['auto', 'svd', 'cholesky', 'lsqr']
+            },
+
+            "Lasso Regression": {
+                'alpha': [0.001, 0.01, 0.1, 1.0],
+                'selection': ['cyclic', 'random']
+            },
+
+            "Elastic Net": {
+                'alpha': [0.001, 0.01, 0.1, 1.0],
+                'l1_ratio': [0.1, 0.5, 0.9]
+            },
+
+            "Decision Tree": {
+                'max_depth': [None, 3, 5, 10],
+                'min_samples_split': [2, 5, 10],
+                'min_samples_leaf': [1, 2, 4],
+                'criterion': ['squared_error', 'friedman_mse', 'absolute_error'],
+                'splitter': ['best', 'random']
+            },
+
+            "Random Forest": {
+                'n_estimators': [50, 100],
+                'max_depth': [None, 5, 10],
+                'min_samples_split': [2, 5],
+                'min_samples_leaf': [1, 2],
+                'max_features': ['sqrt', 'log2'],
+                'bootstrap': [True]
+            },
+
+            "Gradient Boosting": {
+                'n_estimators': [50, 100],
+                'learning_rate': [0.05, 0.1],
+                'max_depth': [3, 5],
+                'min_samples_split': [2, 5],
+                'min_samples_leaf': [1, 2]
+            },
+
+            "AdaBoost": {
+                'n_estimators': [50, 100],
+                'learning_rate': [0.05, 0.1, 1.0],
+                'loss': ['linear', 'square']
+            },
+
+            "Support Vector Regressor": {
+                'C': [0.1, 1, 10],
+                'gamma': ['scale', 'auto'],
+                'kernel': ['rbf', 'linear'],
+                'epsilon': [0.1, 0.2]
+            },
+
+            "K-Neighbors Regressor": {
+                'n_neighbors': [3, 5, 7],
+                'weights': ['uniform', 'distance'],
+                'p': [1, 2]
+            },
+
+            "XGB Regressor": {
+                'n_estimators': [50, 100],
+                'learning_rate': [0.05, 0.1],
+                'max_depth': [3, 5],
+                'min_child_weight': [1, 3],
+                'subsample': [0.8, 1.0],
+                'colsample_bytree': [0.8, 1.0]
+            }
+    }
+
+            model_report:dict =evaluate_models(x_train,y_train,x_test,y_test,models,param)
             best_model_score = max(sorted(model_report.values()))
 
             # get the name of best model
