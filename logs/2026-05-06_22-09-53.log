@@ -1,0 +1,9 @@
+[2026-05-06 22:09:55,574] 25 src.logger - INFO - Data Ingestion method starts
+[2026-05-06 22:09:55,574] 28 src.logger - INFO - Dataset read as pandas dataframe
+[2026-05-06 22:09:55,593] 34 src.logger - INFO - Train test split initiated
+[2026-05-06 22:09:55,603] 40 src.logger - INFO - Ingestion of the data is completed
+[2026-05-06 22:09:55,607] 46 src.logger - INFO - Read train and test data completed
+[2026-05-06 22:09:55,607] 48 src.logger - INFO - Obtaining preprocessing object
+[2026-05-06 22:09:55,608] 62 src.logger - INFO - Applying preprocessing object on training dataframe and testing dataframe.
+[2026-05-06 22:09:55,623] 79 src.logger - INFO - Saved preprocessing object.
+[2026-05-06 22:09:57,870] 55 src.logger - INFO - Best model found on both training and testing dataset Ridge Regression with R2 score: 0.8805671790733922

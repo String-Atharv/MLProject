@@ -1,0 +1,9 @@
+[2026-05-06 22:07:38,618] 25 src.logger - INFO - Data Ingestion method starts
+[2026-05-06 22:07:38,633] 28 src.logger - INFO - Dataset read as pandas dataframe
+[2026-05-06 22:07:38,633] 34 src.logger - INFO - Train test split initiated
+[2026-05-06 22:07:38,652] 40 src.logger - INFO - Ingestion of the data is completed
+[2026-05-06 22:07:38,655] 46 src.logger - INFO - Read train and test data completed
+[2026-05-06 22:07:38,655] 48 src.logger - INFO - Obtaining preprocessing object
+[2026-05-06 22:07:38,656] 62 src.logger - INFO - Applying preprocessing object on training dataframe and testing dataframe.
+[2026-05-06 22:07:38,670] 79 src.logger - INFO - Saved preprocessing object.
+[2026-05-06 22:07:41,259] 55 src.logger - INFO - Best model found on both training and testing dataset
