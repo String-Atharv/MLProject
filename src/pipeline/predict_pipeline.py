@@ -13,6 +13,12 @@ ARTIFACTS_DIR = os.path.join(PROJECT_ROOT, 'artifacts')
 PREPROCESSOR_PATH = os.path.join(ARTIFACTS_DIR, 'preprocessor.pkl')
 MODEL_PATH = os.path.join(ARTIFACTS_DIR, 'model.pkl')
 
+# Log paths for debugging
+logger.info(f"PROJECT_ROOT: {PROJECT_ROOT}")
+logger.info(f"PREPROCESSOR_PATH: {PREPROCESSOR_PATH} | Exists: {os.path.exists(PREPROCESSOR_PATH)}")
+logger.info(f"MODEL_PATH: {MODEL_PATH} | Exists: {os.path.exists(MODEL_PATH)}")
+
+
 # Debug: Log paths on startup
 logger.info(f"PROJECT_ROOT: {PROJECT_ROOT}")
 logger.info(f"PREPROCESSOR_PATH: {PREPROCESSOR_PATH}")
